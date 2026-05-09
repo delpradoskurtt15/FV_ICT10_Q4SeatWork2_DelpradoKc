@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seatwork 2</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+<script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+<style>
+    body {
+      background-color:	#ffb9bc; 
+      font-size: 3em;
+      font-family: 'Garamond', serif;
+      text-align: center;
+      margin-top: 30px;
+      justify-content: center;
+    }
+    .container {
+      display: inline-block;
+      padding: 25px;
+      background-color: #f77389;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-family: 'Garamond', serif;
+      font-size: 40px;
+      color: #ffbac6;
+      margin-bottom: 20px;
+    }
+    input {
+      margin: 10px;
+      padding: 10px;
+      width: 100px;
+      border-radius: 5px;
+      border: 1px solid #f17888;
+      text-align: center;
+      font-size: 12px;
+      font-family: 'Garamond', serif;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 25px;
+      font-family: 'Garamond', serif;
+      font-size: 20px;
+      border: none;
+      border-radius: 6px;
+      background-color: #ff8787;
+      color: white;
+      transition: all 0.3s ease;
+    }
+    #result {
+      margin-top: 20px;
+      padding: 10px 25px;
+      font-size: 25px;
+      color: #f07f88;
+      text-align: center;
+      border: none;
+      border-radius: 6px;
+      background-color: #ebebed;
+
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Grade 10 Classmates</h1>
+        <div class="mb-6"></div>
+
+            <!-- Input Fields -->
+            <input type="text" id="fname" placeholder="first name"/><br>
+            <input type="text" id="section" placeholder="section"/><br>
+            <input type="text" id="favsub" placeholder="favorite subject"/><br>
+            <!-- Buttons -->
+            <button py-click="add_classmate">Add Classmate</button>
+            <button py-click="show_classmates">Show Classmates</button>
+        </div>
+        <!-- Outputs will be shown here -->
+        <div class="mb-6" id="result"></div>
+    </div>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
